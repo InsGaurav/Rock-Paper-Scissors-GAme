@@ -1,57 +1,94 @@
 * {
-    font: 3rem;
-    background-color: black;
-    color: white;
+  font: 3rem;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.emoji-button {
+  font-size: 5rem;
+  height: 10rem;
+  width: 10rem;
+  border: thick solid antiquewhite;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+  /* border-color: antiquewhite; */
+}
+.emoji-button:active {
+  background-color: wheat;
+}
+
+.btn-label {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 3rem;
+  padding-left: 2rem;
+}
+
+
+
+
+
+.user-comp-move {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.score-track {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#reset {
+  align-self: auto;
+  margin-left: 41.5%;
+  font-size: 3rem;
+  color: black;
+  background-color: whitesmoke;
+}
+
+
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 600px) {
+  * {
+    font-size: 2rem;
   }
-  
+
   h1 {
-    text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
   }
-  
-  .buttons {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
+
   .emoji-button {
-    font-size: 5rem;
-    height: 10rem;
-    width: 10rem;
-    border: thick solid antiquewhite;
-    border-radius: 50%;
-    background-color: black;
-    cursor: pointer;
-    /* border-color: antiquewhite; */
+    font-size: 4rem;
+    height: 8rem;
+    width: 8rem;
   }
-  .emoji-button:active {
-    background-color: wheat;
-  }
-  
+
   .btn-label {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 3rem;
-    padding-left: 2rem;
+    font-size: 2rem;
+    padding-left: 1rem;
   }
-  
-  
-  
-  
+
   .user-comp-move {
-    font-size: 2.5rem;
-    text-align: center;
+    font-size: 2rem;
   }
+
   .score-track {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.25rem;
   }
-  
+
   #reset {
-    align-self: auto;
-    margin-left: 41.5%;
-    font-size: 3rem;
-    color: black;
-    background-color: whitesmoke;
+    font-size: 2rem;
+    margin-left: 35%;
   }
-  
+}
