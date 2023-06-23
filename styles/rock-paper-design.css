@@ -1,0 +1,94 @@
+* {
+    font: 3rem;
+    background-color: black;
+    color: white;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .emoji-button {
+    font-size: 5rem;
+    height: 10rem;
+    width: 10rem;
+    border: thick solid antiquewhite;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+    /* border-color: antiquewhite; */
+  }
+  .emoji-button:active {
+    background-color: wheat;
+  }
+  
+  .btn-label {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3rem;
+    padding-left: 2rem;
+  }
+  
+  .dancing-animation {
+    height: 16rem;
+    width: 20rem;
+    background-image: url("resources/dancing-emoji.gif");
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: top 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  
+  
+  .animate {
+    animation: danceAnimation 1s infinite;
+  
+  }
+  
+  
+  
+  @keyframes danceAnimation {
+    0% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(15deg);
+    }
+    50% {
+      transform: rotate(0);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+  
+  
+  
+  .user-comp-move {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .score-track {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  #reset {
+    align-self: auto;
+    margin-left: 41.5%;
+    font-size: 3rem;
+    color: black;
+    background-color: whitesmoke;
+  }
+  
